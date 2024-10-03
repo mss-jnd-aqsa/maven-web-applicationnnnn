@@ -9,7 +9,7 @@
 </head>
 </head>
 <body>
-<h1 align="center"> Welcome to the chi classes Best place to pretedenting they are in lov- New DevOps Batch will start on Aug 1st 7.30 PM IST - WebHook Demo</h1>
+<h1 align="center"> Welcome to the chi classes Best place to pretedenting they are in lov and fuuuu- New DevOps Batch will start on Aug 1st 7.30 PM IST - WebHook Demo</h1>
 <h1 align="center">Welcome to the chi classes Private Ltd. Ph No: +91-9980923226, +91-9980923216 ,+91-9900012028,Bengaluru,Karnataka,India</h1>
 <h1 align="center"> chi classes provide very good training on how to manupulate the persob- Very Good Training center for DevOps with AWS,Python & AWS Solution Architect & Terraform in Bangalore India.Teaching Real Time scnerios</h1>
 <hr>
