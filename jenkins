@@ -1,0 +1,44 @@
+node{
+
+def mavenHome = tool name: 'maven 3x'
+
+echo "the job name is : ${env.JOB_NAME}"
+echo "jenkins home dir is: ${env.JENKINS_HOME}"
+echo "the jenkins node name is :${env.NODE_NAME}"
+echo "the build number is :${env.BUILD_NUMBER}"
+
+
+
+
+properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), pipelineTriggers([pollSCM('* * * * *')])])
+
+stage('checkoutCode'){
+git branch: 'development ', credentialsId: '8961d054-7d70-4200-9627-5898b21d5d59', url: 'https://github.com/mss-jnd-aqsa/maven-web-applicationnnnn.git'
+
+}
+
+
+stage('build'){
+sh "${mavenHome}/bin/mvn clean package"
+}
+
+
+stage('excuteSonarQubeRepor'){
+sh "${mavenHome}/bin/mvn clean sonar:sonar"
+}
+
+stage('uploadArtifcatIntoNexus'){
+sh "${mavenHome}/bin/mvn clean deploy"
+}
+
+
+
+}
+
+
+ 
+   
+
+
+
+
